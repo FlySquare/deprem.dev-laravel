@@ -16,11 +16,13 @@ return new class extends Migration
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('address')->nullable();
+            $table->text('address')->nullable();
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('phone')->nullable();
-            $table->string('google_maps_url')->nullable();
+            $table->text('google_maps_url')->nullable();
+            $table->string('request_ip')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
