@@ -22,7 +22,7 @@ class ContentController extends Controller
            $locations->orWhere('state','like','%'.$getLocationRequest->get('query').'%');
            $locations->orWhere('address','like','%'.$getLocationRequest->get('query').'%');
        }
-       $locations->where('status','1')->inRandomOrder();
+       $locations->where('status','1');
        return fractal($locations->get())->transformWith(new LocationTransformer());
     }
 
