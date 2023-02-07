@@ -44,6 +44,12 @@ Projeyi deprem anında (özellikle son deprem) konumunuza en yakın toplanma/bar
 | `phone`      | `string` | **Not Required**.|
 | `google_maps_url`      | `string` | **Not Required**.|
 
+#### Tüm Yararlı Linkler Çek
+
+```http
+  GET /api/links
+```
+
 ## Geliştiriciler
 
 - [@flysquare](https://www.github.com/flysquare)
