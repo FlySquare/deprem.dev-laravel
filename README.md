@@ -32,7 +32,7 @@ Projeyi deprem anında (özellikle son deprem) konumunuza en yakın toplanma/bar
 #### Konum Ekle
 
 ```http
-  GET /api/locations/add
+  POST /api/locations/add
 ```
 
 | Parameter | Type     | Description                       |
